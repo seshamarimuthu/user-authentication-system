@@ -74,7 +74,7 @@ If you change your domain email credentials, update the following in the /user_a
 
 Step 6: Registration and Login
 
-- Registration: Go to http://localhost/user_authentication_system to register a new user.
+- Registration: Go to http://localhost/user_authentication_system/register.php to register a new user.
 - Login: Log in at http://localhost/user_authentication_system/login.php.
-- Dashboard: After logging in, you’ll be redirected to Dashboard.php.
+- Dashboard: After logging in, you’ll be redirected to index.php.
 - Logout: Log out by visiting Logout.php.
