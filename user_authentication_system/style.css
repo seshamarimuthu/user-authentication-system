@@ -1,0 +1,44 @@
+.box{
+    text-align: center;
+}
+.input{
+    padding: 5px;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn{
+    margin-top: 10px
+}
+.signup-btn{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #00a400;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.err{
+    color: red;
+}
+.box {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+button{
+    cursor: pointer;
+}
+h1{
+    color: #1877f2;
+}
+body{
+    background-color: #f2f4f7;
+}
