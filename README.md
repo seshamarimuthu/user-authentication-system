@@ -6,37 +6,37 @@ This is a simple user authentication system built using Core PHP and MySQL. The 
 
 Features
 
-User Registration: Users can register with a unique username, email, and password.
-User Login: Users log in with their username/email and password.
-User Logout: Logs users out and destroys the session.
-Email Verification: After registration, users receive an email to verify their account (using PHPMailer).
-Dashboard Access: Once logged in, users can access the dashboard.
+- User Registration: Users can register with a unique username, email, and password.
+- User Login: Users log in with their username/email and password.
+- User Logout: Logs users out and destroys the session.
+- Email Verification: After registration, users receive an email to verify their account (using PHPMailer).
+- Dashboard Access: Once logged in, users can access the dashboard.
 
 Security
 
-Passwords are hashed using password_hash().
-SQL queries are protected with prepared statements to avoid SQL injection.
-CSRF tokens are implemented to prevent cross-site request forgery.
+- Passwords are hashed using password_hash().
+- SQL queries are protected with prepared statements to avoid SQL injection.
+- CSRF tokens are implemented to prevent cross-site request forgery.
 
 Technologies Used
 
-PHP
-MySQL (Database)
-PHPMailer (for email verification)
-HTML/CSS (Frontend)
+- PHP
+- MySQL (Database)
+- PHPMailer (for email verification)
+- HTML/CSS (Frontend)
 
 Before you begin, ensure you have the following installed:
 
-XAMPP for running a local server.
-PHP 7.0 or higher.
-MySQL for database management.
+- XAMPP for running a local server.
+- PHP 7.0 or higher.
+- MySQL for database management.
 
 Installation
 
 Step 1: Clone the Repository
 Download or clone the project to your local development environment.
-bash
-Copy code git clone https://github.com/seshamarimuthu/user-authentication-system
+
+git clone https://github.com/seshamarimuthu/user-authentication-system
 
 Step 2: Move Files to Server Directory
 For XAMPP, move the project folder to htdocs.
@@ -44,14 +44,13 @@ For XAMPP, move the project folder to htdocs.
 Step 3: Database Setup
 Create a MySQL database in your preferred MySQL management tool (e.g., phpMyAdmin):
 
-Database Name: user_authentication.
-Import the SQL file located in /user_authentication_system/sql into the newly created database.
-Ensure the database tables are created successfully (users, etc.).
+- Database Name: user_authentication.
+- Import the SQL file located in /user_authentication_system/sql into the newly created database.
+- Ensure the database tables are created successfully (users, etc.).
 
-Step 4: Configure Database Connection
+Step 4: Configure Database Connection in Config.php
 
 <?php
-
 $servername = "localhost";          // Database host
 $db_username = "root";              // Your MySQL username
 $db_password = "";                  // Your MySQL password (leave empty if default)
@@ -66,16 +65,16 @@ if ($conn->connect_error) {
 
 Step 5: Configure PHPMailer
 
-If you change your domain email credentials, update the following in the **/user_authentication_system/index.php** file:
+If you change your domain email credentials, update the following in the /user_authentication_system/index.php file:
 - Line 22: your email
 - Line 23: your password
 - Line 24: your name
 
 (If you don't need your email, it should work fine.)
 
-Step 7: Registration and Login
+Step 6: Registration and Login
 
-Registration: Go to http://localhost/user_authentication_system to register a new user.
-Login: Log in at http://localhost/user_authentication_system/login.php.
-Dashboard: After logging in, you’ll be redirected to the Dashboard.php.
-Logout: Log out by visiting Logout.php.
+- Registration: Go to http://localhost/user_authentication_system to register a new user.
+- Login: Log in at http://localhost/user_authentication_system/login.php.
+- Dashboard: After logging in, you’ll be redirected to Dashboard.php.
+- Logout: Log out by visiting Logout.php.
