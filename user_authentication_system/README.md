@@ -78,19 +78,3 @@ Registration: Go to http://localhost/user_authentication_system to register a ne
 Login: Log in at http://localhost/user_authentication_system/login.php.
 Dashboard: After logging in, you’ll be redirected to the Dashboard.php.
 Logout: Log out by visiting Logout.php.
-
-Folder Structure:
-bash
-user_authentication_system/
-│
-├── Dashboard.php          # User dashboard
-├── Login.php              # User login page
-├── Logout.php             # Logout functionality
-├── Verify.php             # Email verification page
-├── index.php              # Register page
-├── style.css              # Stylesheet for UI
-├── config.php             # Database connection settings
-├── sql                    # Database setup file
-├── phpmailer/             # PHPMailer library for sending emails
-└── README.md              # Instructions for setting up the project
- 
