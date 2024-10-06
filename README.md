@@ -36,7 +36,7 @@ Installation
 Step 1: Clone the Repository
 Download or clone the project to your local development environment.
 bash
-Copy code git clone <repository-url>
+Copy code git clone https://github.com/seshamarimuthu/user-authentication-system
 
 Step 2: Move Files to Server Directory
 For XAMPP, move the project folder to htdocs.
